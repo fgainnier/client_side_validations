@@ -271,8 +271,8 @@ ClientSideValidations =
       new RegExp("^(-|\\+)?(?:\\d+|\\d{1,3}(?:\\#{number_format.delimiter}\\d{3})+)(?:\\#{number_format.separator}\\d*)?$")
 
   selectors:
-    inputs: ':input:not(button):not([type="submit"])[name]:enabled'
-    validate_inputs: ':input:enabled[data-validate]'
+    inputs: ':input:not(button):not([type="submit"])'
+    validate_inputs: ':input:[data-validate]'
     forms:  'form[data-client-side-validations]'
 
   validators:
