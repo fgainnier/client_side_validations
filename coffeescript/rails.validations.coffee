@@ -272,7 +272,7 @@ ClientSideValidations =
 
   selectors:
     inputs: ':input:not(button):not([type="submit"])'
-    validate_inputs: ':input:[data-validate]'
+    validate_inputs: ':input[data-validate]'
     forms:  'form[data-client-side-validations]'
 
   validators:
